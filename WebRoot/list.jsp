@@ -30,13 +30,13 @@
 		<c:forEach var="list" items="${list}">
 			<tr>
 				<td>${list.empid}</td>
-				<td><a href="showEmp.form?id=${list.empid}">${list.ename}</a></td>
+				<td><a href="student/showEmp.form?id=${list.empid}">${list.ename}</a></td>
 				<td>${list.dname}</td>
-				<td><a href="del.form?did=${list.empid}">删除</a>&nbsp;&nbsp;&nbsp;<a href="getDeptsAll.form?id=${list.empid}">修改</a></td>
+				<td><a href="student/del.form?did=${list.empid}">删除</a>&nbsp;&nbsp;&nbsp;<a href="student/getDeptsAll.form?id=${list.empid}">修改</a></td>
 			</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="4"><a href="DeptsAll.form">添加</a></td>
+			<td colspan="4"><a href="student/DeptsAll.form">添加</a></td>
 		</tr>
 	</table>
 </body>

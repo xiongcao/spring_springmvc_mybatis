@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="SMMTest1"
+  name="spring_springmvc_mybaits"
   id="myeclipse.1370068400995"
-  context-root="/SMMTest1"
+  context-root="/spring_springmvc_mybaits"
   j2ee-spec="5.0"
-  archive="SMMTest1.war">
+  archive="spring_springmvc_mybaits.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>

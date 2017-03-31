@@ -16,7 +16,7 @@ import com.smm.entity.Vstucls;
 import com.smm.service.StudentService;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/student")
 public class StudentAction {
 	@Autowired
 	StudentService studentService;
@@ -26,7 +26,7 @@ public class StudentAction {
 	public String showAll(HttpServletRequest request) {
 		List<Vstucls> list = studentService.showAll();
 		request.setAttribute("list", list);
-		return "list.jsp";
+		return "/list.jsp";
 	}
 
 	// 根据员工ID 查询单个员工信息（视图） 显示员工信息
@@ -34,7 +34,7 @@ public class StudentAction {
 	public String showEmp(@RequestParam("id") int id, HttpServletRequest request) {
 		List<Vstucls> list = studentService.showEmp(id);
 		request.setAttribute("list", list);
-		return "showEmp.jsp";
+		return "/showEmp.jsp";
 	}
 
 	// 查询所有部门信息
@@ -49,14 +49,14 @@ public class StudentAction {
 		public String DeptsAll(HttpServletRequest request) {
 			List<TblDept> listDept1 = studentService.getDeptsAll();
 			request.getSession().setAttribute("listDept1", listDept1);
-			return "add.jsp";
+			return "/add.jsp";
 		}
 	// 回显 根据员工ID 查询单个员工信息（视图） 显示员工信息
 	@RequestMapping(value = "/getEmp")
 	public String getEmp(@RequestParam("id") int id, HttpServletRequest request) {
 		TblEmp tblEmp = studentService.getEmp(id);
 		request.setAttribute("tblEmp", tblEmp);
-		return "upd.jsp";
+		return "/upd.jsp";
 	}
 	// 修改员工信息
 	@RequestMapping(value = "/upd")

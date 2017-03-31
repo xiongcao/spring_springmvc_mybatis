@@ -20,7 +20,7 @@
 <meta http-equiv="description" content="This is my page">
 </head>
 <body>
-	<form action="add.form" method="post">
+	<form action="student/add.form" method="post">
 		<table border="1" align="center">
 			<tr>
 				<td>员工编辑</td>

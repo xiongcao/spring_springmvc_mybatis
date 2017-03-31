@@ -42,7 +42,7 @@
 			</tr>
 		</c:forEach>
 		<tr>
-				<td colspan="2"><a href="showAll.form">返回</a></td>
+				<td colspan="2"><a href="student/showAll.form">返回</a></td>
 			</tr>
 	</table>
 </body>
